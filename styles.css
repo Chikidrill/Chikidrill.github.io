@@ -1,8 +1,97 @@
-html{
-    font-size: 20px;
+.body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 147px;
+    color: #1F1E1E;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.375;
 }
-
-h1
-{
-    color:aqua
+  .page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 147px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(222, 222, 222, 0.5);
+    backdrop-filter: blur(20px);
+    z-index: 100;
 }
+  @supports (backdrop-filter: blur(20px)) {
+    .page-header {
+      background-color: rgba(222, 222, 222, 0.5);
+      backdrop-filter: blur(20px);
+    }
+}
+  .page-header__container {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1414px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+  .main {
+    flex: 1 0 auto;
+}
+  .page-footer {
+    flex: 0 0 auto;
+}
+  .page-header__logo {
+    flex-shrink: 0;
+    width: 202px;
+    height: 147px;
+    font-size: 0;
+    text-decoration: none;
+}
+  .page-header__logo-icon {
+    width: 100%;
+    height: 100%;
+}
+.page-header__nav {
+    display: flex;
+    align-items: baseline;
+    margin: 0 auto;
+  }
+  .page-header__nav-link {
+    margin: 0 25px;
+    color: #1f1e1e;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .page-header__nav-link:hover {
+    color: #bc3324;
+  }
+.btn {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 15px 40px;
+    border: 1px solid #1F1E1E;
+    background-color: transparent;
+    outline: none;
+    color: #1F1E1E;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: #1F1E1E;
+    color: #ffffff;
+  }
