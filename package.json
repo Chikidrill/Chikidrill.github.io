@@ -6,7 +6,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.2",
     "browser-sync": "^2.27.7",
-    "del": "^6.0.0",
+    "del": "^6.1.1",
     "gulp-csso": "^4.0.1",
     "gulp-file-include": "^2.3.0",
     "gulp-format-html": "^1.2.5",

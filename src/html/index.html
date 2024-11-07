@@ -1,41 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Lenni Art</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  </head>
+  <!-- prettier-ignore -->
+  @@include('blocks/head.html')
   <body class="body">
-    <header class="page-header">
-        <div class="page-header__container">
-          <a href="index.html" class="page-header__logo">
-            <img src="images/logo.svg" alt="logo" class="page-header__logo-icon">
-            <svg 
-              width="202" 
-              height="147" 
-              viewBox="0 0 202 147" 
-              fill="none" 
-              xmlns="http://www.w3.org/2000/svg"
-             >
-            </svg>
-          </a>
-          <nav class="page-header__nav"> 
-            <a href="events.html" class="page-header__nav-link">Мероприятия</a>
-            <a href="#" class="page-header__nav-link">Блог</a>
-            <a href="#" class="page-header__nav-link">О нас</a>
-            <a href="#" class="page-header__nav-link">Контакты</a>
-        </nav>
-        <div class="page-header__right-block">
-            <a href="#" class="btn page-header__user-btn">
-              Войти
-            </a>
-        </div>
-
-    </header>
+    <!-- prettier-ignore -->
+    @@include('blocks/page-header.html')
     <main class="main"></main>
-    <footer class="page-footer"></footer>
+    @@include('blocks/page-footer.html')
   </body>
 </html>

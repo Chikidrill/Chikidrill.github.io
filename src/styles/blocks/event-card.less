@@ -1,0 +1,63 @@
+.event-card {
+    display: flex;
+    width: 360px;
+    max-width: 100%;
+    min-width: 280px;
+  
+  &__link {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #1F1E1E;
+    text-decoration: none;
+  }
+  &:hover &__title {
+    color: #BC3324;
+    text-decoration-color: #BC3324;
+  }
+  &__picture {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0 0 25px;
+    font-size: 0;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  &__picture::after {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 107.16%;
+  }
+  &__img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &__title {
+    margin: 0 0 15px;
+    min-height: 66px;
+    color: #1F1E1E;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    text-decoration: underline transparent;
+    transition: color 0.2s, text-decoration-color 0.2s;
+  }
+  &__description {
+    margin: 0 0 auto;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  &__time {
+    margin: 15px 0 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
