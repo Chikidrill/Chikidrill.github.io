@@ -73,6 +73,13 @@
   .page-header__nav-link:hover {
     color: #bc3324;
   }
+  .page-header_right-block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 202px;
+    
+    }
 .btn {
     display: inline-block;
     box-sizing: border-box;
@@ -87,7 +94,7 @@
     line-height: 20px;
     text-align: center;
     text-decoration: none;
-    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+    transition: color 0.8s, background-color 0.2s, border-color 0.2s;
     overflow: hidden;
     cursor: pointer;
   }
@@ -127,10 +134,10 @@
   .listing__events-list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -30px -120px;
+    margin: 0 30px -120px;
   }
   .listing__event-card {
-  width: calc(33.3333% - 60px);
+  width: calc(33.3333% - 40px);
   margin: 0 30px 120px;
 }
   .events {
@@ -141,7 +148,7 @@
   }
   .event-card {
     display: flex;
-    width: 405px;
+    width: 360px;
     max-width: 100%;
     min-width: 280px;
   }
