@@ -137,9 +137,10 @@
     margin: 0 30px -120px;
   }
   .listing__event-card {
-  width: calc(33.3333% - 40px);
-  margin: 0 30px 120px;
+    width: calc(33.3333% - 60px);
+    margin: 0 30px 120px;
 }
+
   .events {
     padding: 140px 0 100px;
   }

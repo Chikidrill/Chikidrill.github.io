@@ -26,6 +26,7 @@ const resources = {
   svgSprite: "src/assets/svg-sprite/*.svg",
   static: [
     "src/assets/icons/**/*.*",
+    "src/assets/favicons/**/*.*",
     "src/assets/fonts/**/*.{woff,woff2}",
   ]
 };
