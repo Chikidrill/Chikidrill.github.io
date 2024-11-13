@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="show-event-popup">
   <!-- prettier-ignore -->
   @@include('blocks/head.html')
   <body class="body">
@@ -7,7 +7,9 @@
     @@include('blocks/page-header.html')
     <main class="main">
       @@include('blocks/blog-listing.html', {"class": "home__listing"})
+      
     </main>
     @@include('blocks/page-footer.html')
+    @@include('blocks/event-pp.html')
   </body>
 </html>
