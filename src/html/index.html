@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <!-- prettier-ignore -->
-    @@include('blocks/head.html')
+  <!-- prettier-ignore -->
+  @@include('blocks/head.html')
   <body class="body">
-    <h2 class="blog__title section-title">БЛОГ</h2>
     <!-- prettier-ignore -->
     @@include('blocks/page-header.html')
     <main class="main">
+      @@include('blocks/blog-listing.html', {"class": "home__listing"})
     </main>
     @@include('blocks/page-footer.html')
   </body>

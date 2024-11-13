@@ -41,7 +41,8 @@ function includeHtml() {
     .pipe(
       include({
         prefix: "@@",
-        basepath: "@file"
+        basepath: "@file",
+        context: { encoding: false }
       })
     )
     .pipe(formatHtml())
@@ -104,10 +105,10 @@ function images() {
       imagemin([
         imagemin_gifsicle({ interlaced: true }),
         imagemin_mozjpeg({ quality: 100, progressive: true }),
-        imagemin_optipng({ optimizationLevel: 3 })
+        imagemin_optipng({ optimizationLevel: 5 })
       ])
     )
-    .pipe(gulp.dest("dist/assets/images"));
+    .pipe(gulp.dest('dist/assets/images'));
 }
 function svgSprite() {
   return gulp
@@ -153,6 +154,7 @@ function serve() {
   gulp.watch(resources.images, { delay: 500 }, gulp.series(images, reloadServer));
   gulp.watch(resources.svgSprite, gulp.series(svgSprite, reloadServer));
 }
+
 const start = gulp.series(build, serve);
 export {
   clean,
@@ -166,4 +168,5 @@ export {
   build,
   serve,
   start
+  
 };

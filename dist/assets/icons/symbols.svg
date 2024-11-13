@@ -1,4 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="logo" viewBox="0 0 202 147"><g fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="arrow"><g fill="none">
+    <path d="M40 52.213a29.836 29.836 0 0 0 15.297 8.21 29.76 29.76 0 0 0 17.26-1.707 29.902 29.902 0 0 0 13.408-11.049A30.089 30.089 0 0 0 91 31a30.089 30.089 0 0 0-5.035-16.667 29.902 29.902 0 0 0-13.407-11.05 29.76 29.76 0 0 0-17.262-1.707A29.837 29.837 0 0 0 40 9.786" stroke="#1F1E1E" stroke-width="2" stroke-linecap="round"/>
+    <path d="M5 31h60M58 24l7 7-7 7" stroke="#1F1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g></symbol><symbol id="logo" viewBox="0 0 202 147"><g fill="none">
     <path fill="#1F1E1E" d="M0 0h147v147H0z"/>
     <path d="M39.965 72.439H26.633V50.032h-.032v-.033h-4.686V73h18.05v-.561ZM43.932 73h18.117v-.561H48.618V61.285h10.494v-.594H48.618V50.56h13.43v-.561H43.933V73ZM70.7 73V50.56c2.87 0 11.714 1.089 12.374 13.893V73h4.686V49.999h-4.686v10.329C81.655 54.19 77.167 49.999 70.7 49.999h-4.686V73H70.7ZM97.39 73V50.56c2.87 0 11.714 1.089 12.374 13.893V73h4.686V49.999h-4.686v10.329c-1.419-6.138-5.907-10.329-12.375-10.329h-4.686V73h4.686ZM119.393 73h4.686V49.999h-4.686V73Z" fill="#fff"/>
     <path fill="#BC3324" d="M81 92h121v42H81z"/>
