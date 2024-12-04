@@ -1,12 +1,13 @@
 .table {
     width: 100%;
     border-collapse: collapse;
-    color: #1F1E1E;
+    color: @black;
     text-align: center;
-    padding: 140px 0 100px;
+    margin-top: 60px;
+    padding:  140px 0 100px;
     &__tr {
       &:nth-child(2n-1) {
-        background-color: fade(#1F1E1E, 3%);
+        background-color: fade(@black, 3%);
       }
     }
     &__th {
@@ -14,6 +15,7 @@
       font-weight: 600;
       font-size: 18px;
       line-height: 25px;
+      
     }
     &__footer-th {
       height: 60px;
@@ -23,7 +25,7 @@
     &__footer-th {
       box-sizing: border-box;
       padding: 10px;
-      border-right: 1px solid #BFBFBF;
+      border-right: 1px solid @gray_dark;
       text-transform: uppercase;
       &:first-child {
         padding-left: 0;
@@ -37,8 +39,8 @@
       box-sizing: border-box;
       height: 50px;
       padding: 10px 10px 10px 0;
-      border-top: 1px solid #BFBFBF;
-      border-bottom: 1px solid #BFBFBF;
+      border-top: 1px solid @gray_dark;
+      border-bottom: 1px solid @gray_dark;
       font-weight: 400;
       font-size: 18px;
       line-height: 25px;
@@ -48,7 +50,7 @@
       box-sizing: border-box;
       height: 50px;
       padding: 10px;
-      border: 1px solid #BFBFBF;
+      border: 1px solid @gray_dark;
       font-weight: 600;
       font-size: 16px;
       line-height: 22px;
@@ -57,5 +59,8 @@
         border-right: none;
         padding-right: 0;
       }
+    }
+    &__section-title{
+      font-size: 22px;
     }
   }
