@@ -485,6 +485,111 @@ body {
 .article-card__arrow:hover {
   color: #bc3324;
 }
+.about__container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 1414px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.about__block1 {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  grid-template-areas: "title pic" "text text";
+  gap: 50px 60px;
+}
+.about__block2 {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  grid-template-areas: "pic1 pic2" "title pic2" "text text";
+  gap: 50px 60px;
+}
+.about__picture {
+  grid-area: pic1;
+}
+.about__subtitle {
+  grid-area: title;
+  margin-top: 50px 0 0;
+  font-size: 44px;
+}
+.about__text {
+  grid-area: text;
+  margin: 0;
+  margin-left: auto;
+  max-width: 870px;
+}
+.about__picture2 {
+  grid-area: pic2;
+  align-self: flex-end;
+}
+.about__block3 {
+  display: grid;
+  grid-template-columns: 1fr 344px;
+  padding-top: 110px;
+}
+.about__block3-picture {
+  display: block;
+  max-width: 930px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 18px 19px 0 49px;
+  position: relative;
+}
+.about__block3-picture::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64.7%;
+  background-color: #bc3324;
+}
+.about__block3-picture::after {
+  display: block;
+  width: 100%;
+  content: '';
+  padding-top: 40.86%;
+}
+.about__block3-img {
+  position: absolute;
+  top: 19px;
+  left: 49px;
+  width: calc(100% - 57px);
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.about__block3-content {
+  padding-left: 60px;
+  padding-top: 71px;
+}
+.about__block3-text {
+  font-size: 18px;
+  font-weight: 400;
+}
+.about__block3-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 89px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 176px;
+  color: black;
+  text-decoration-color: transparent;
+  -webkit-transition: color 0.2s, text-decoration-color 0.2s;
+  transition: color 0.2s, text-decoration-color 0.2s;
+}
+.about__block3-link:hover {
+  color: #bc3324;
+  text-decoration-color: #bc3324;
+}
 .listing {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
