@@ -1,26 +1,48 @@
 .reserve{
-  display: flex; /* Переключаемся на горизонтальное размещение */
-  flex-wrap: wrap;
   margin: 80px auto 0 0;
+  display: grid;
+  gap: 65px 11%;
+  grid-template-columns: 405px calc(89% - 405px);
+  grid-template-areas: 
+    "checks scheme"
+    "order legend"; 
+  width: 100%;
+  @media @bw1340 {
+    gap: 65px 6.5%;
+    grid-template-columns: 340px calc(93.5% - 340px);
+  }
+  @media @bw1020 {
+    gap: 60px;
+    grid-template-columns: auto 390px;
+    grid-template-areas: 
+      "scheme scheme"
+      "checks legend"
+      "checks order"; 
+  }
+  @media @bw768 {
+    grid-template-columns: 100%;
+    grid-template-areas: 
+      "scheme"
+      "legend"
+      "checks"
+      "order"; 
+    
+  }
   &__checks{
+    grid-area: checks;
     display: flex;
     flex-direction: column;
-    flex-basis: calc(33.33% - 20px);
     max-width: 218px;
-    max-height: 419px;
-    width: 100%;
-    padding-right: 336px;
+    margin-right: 0;
   }
   &__check{
     margin-bottom: 10px;
   }
   &__order {
-      display: flex;
-      flex-direction: column;
-      margin-top: 114px; 
-      max-width: 405px;
-      width: 100%;
-      height: 100%;
+    grid-area: order;
+    display: flex;
+    flex-direction: column;
+    max-width: 405px;
   }
   &__tickets {
       display: flex;
@@ -59,24 +81,25 @@
       }
     }
   &__scheme{
+    grid-area: scheme;
     display: flex;
-    max-width: 780px;
-    max-height: 473px;
-    width: 100%;
-    height: 100%;
+    justify-content: center;
+    height: auto;
   }
   &__scheme-container{
-    margin-top: 2px;
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    margin:auto;
   }
   &__scheme-wrapper {
-    
-      &::after {
-        max-width: 780px;
-        content: "";
-        display: block;
-        width: 100%;
-        padding-top: 51.15384%;
-      }
+      margin: 0 auto 0;
+      max-width: 780px;
+      content: "";
+      display: block;
+      width: 100%;
+      margin-bottom: 0px;
     }
   &__scene {
     position: absolute;
@@ -106,25 +129,21 @@
     background-color: @black;
   }
   &__legend{
+    grid-area: legend;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: flex-end;
-    margin-top: 114px; 
-    margin-left: 573px;
+    margin-top: 0;
     max-width: 355px;
-    width: 100%;
+    margin-left: auto;
   }
     &__legend-list{
       margin-bottom: 19px;
     }
     &__legend-note{
       display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-end;
-      max-width: 355px;
-      width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
     }
     &__legend-qty {
       display: flex;
@@ -165,4 +184,3 @@
       margin-right: 29px;
     }
 }
-

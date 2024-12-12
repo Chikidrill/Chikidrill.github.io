@@ -29,7 +29,13 @@ body {
   line-height: 1.375;
   overflow-x: hidden;
   padding-top: 147px;
-  
+          
+  @media @bw1660 {
+    padding-top: 111px;
+  }
+  @media @bw768 {
+    padding-top: 70px;
+  }
 }
 .main {
   flex: 1 0 auto;

@@ -1,4 +1,5 @@
 .about{
+    
     &__container{
         .container();
     }
@@ -9,6 +10,14 @@
         "title pic"
         "text text";
         gap: 50px 60px;
+        @media @w768 {
+            grid-template-columns: 100%;
+            grid-template-areas: 
+              "title"
+              "pic"
+              "text"
+              "text"
+        }
     }
     &__block2{
         margin-top: 100px;
@@ -19,6 +28,14 @@
         "title pic2"
         "text text";
         gap: 50px 60px;
+        @media @w768 {
+            grid-template-columns: 100%;
+            grid-template-areas: 
+              "pic1"
+              "title"
+              "text"
+              "pic2"; 
+        }
     }
     &__picture{
         grid-area: pic1;
@@ -27,12 +44,18 @@
         grid-area: title;
         margin-top: 50px 0 0;
         font-size: 44px;
+        @media @w768 {
+            font-size: 19px;
+        }
     }
     &__text{
         grid-area: text;
         margin: 0;
         margin-left: auto;
         max-width: 870px;
+        @media @w768 {
+            font-size: 20px;
+        }
     }
     &__picture2{
         grid-area: pic2;
@@ -42,8 +65,18 @@
         display: grid;
         grid-template-columns: 1fr 344px;
         padding-top: 110px;
+        grid-template-areas: 
+        "picture" "text";
+        @media @w768{
+            grid-template-areas: 
+            "picture"
+            "text";
+        }
+        
+
     }
     &__block3-picture{
+        grid-area: picture;
         display: block;
         max-width: 930px;
         width: 100%;
@@ -74,6 +107,7 @@
         object-fit: contain;
     }
     &__block3-content{
+        grid-area: text;
         padding-left: 60px;
         padding-top: 71px;
     }

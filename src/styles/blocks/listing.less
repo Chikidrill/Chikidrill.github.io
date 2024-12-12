@@ -1,20 +1,31 @@
 .listing {
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 1414px;
-    margin: 0 auto;
-    padding-left: 40px;
-    padding-right: 40px;
+    .container;
   
   &__events-list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -30px -120px;
+    gap: 60px;
+    
+    @media @bw1660 {
+      gap: 40px;
+    }
+    @media @bw1020 {
+      gap: 30px;
+    }
   }
   &__event-card {
-    width: calc(33.3333% - 60px);
-    margin: 0 30px 120px;
+    width: calc(33.3333% - 40px);
+    margin: 0 0 60px;
+    @media @bw1660 {
+      width: calc(33.3333% - 26.666px);
     }
+    @media @bw1020 {
+      width: calc(50% - 15px);
+    }
+    @media @bw1020{
+      width:100%;
+    }
+  }
 }
