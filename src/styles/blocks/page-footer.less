@@ -84,11 +84,47 @@
     &__block2-links{
         grid-area: links;
     }
+    &__block2-link{
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 600;
+        margin-right: 60px;
+        &:hover{
+            @media (hover: hover){
+                color: @red;
+            }
+        }
+    }
     &__copyright{
         grid-area: copyright;
         margin-bottom: 20px;
     }
     &__create{
         grid-area: create;
+        grid-column-start: 3;
+  grid-row-start: 2;
+    }
+    &__create-link{
+        display: flex;
+        position: relative;
+        justify-content: right;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 600;
+
+        &:hover{
+            @media (hover: hover){
+                color: @red;
+            }
+        }
+    }
+    &__create-icon{
+        margin-top: 3px;
+        margin-left: 15px;
     }
 }
