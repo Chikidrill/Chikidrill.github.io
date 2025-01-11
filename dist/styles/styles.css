@@ -550,6 +550,7 @@ body {
   font-weight: 700;
   font-size: 6vw;
   line-height: 1.2;
+  margin-bottom: 70px;
 }
 .doit__text {
   margin: 0px 0px 0px -2.5vw;
@@ -991,6 +992,85 @@ body {
   width: 246px;
   height: 52px;
 }
+.upcoming {
+  margin-top: 230px;
+}
+.upcoming__navigation-arrow-icon-left {
+  -webkit-transform: scale(-1, 1);
+      -ms-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+.upcoming__navigation {
+  margin-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 343px;
+}
+.contacts {
+  margin-bottom: 245px;
+}
+.contacts__map {
+  float: right;
+  margin-right: 293px;
+}
+.contacts__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 54px;
+}
+.contacts__text-title {
+  font-style: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+.contacts__text-descr {
+  margin-bottom: 5px;
+}
+.contacts__departments {
+  margin-left: 293px;
+  max-width: 400px;
+}
+.contacts__departments-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 67px;
+}
+.contacts__departments-rent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 67px;
+}
+.contacts__departments-events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 67px;
+}
+.contacts__departments-logo {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 110px;
+  height: 110px;
+  font-size: 0;
+  text-decoration: none;
+}
+.contacts__departments-logo-icon {
+  width: 100%;
+  height: 100%;
+}
 .listing {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1039,11 +1119,19 @@ body {
 }
 .events__arrowdown {
   display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
 }
 .events__tariffs-description {
   max-width: 868px;
   width: 100%;
+}
+.events__arrowdown {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 .events__tariffs-table .section-title {
   font-size: 22px;
@@ -2279,10 +2367,6 @@ body {
 .arrow:hover {
   color: #bc3324;
 }
-.arrow__icon {
-  width: 100%;
-  height: 100%;
-}
 @media (max-width: 1659px) {
   .width_624 {
     max-width: 604px;
@@ -2301,6 +2385,10 @@ body {
   }
   .doit {
     font-size: 6.5vw;
+  }
+  .contacts__departments-logo {
+    width: 152px;
+    height: 111px;
   }
   .listing__events-list {
     margin: 0 -20px -100px;
@@ -2626,6 +2714,10 @@ body {
   .offer__buttons-torent {
     width: 238px;
     height: 52px;
+  }
+  .contacts__departments-logo {
+    width: 96px;
+    height: 70px;
   }
   .listing {
     padding-left: 20px;
