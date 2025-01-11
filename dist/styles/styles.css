@@ -959,6 +959,38 @@ body {
   font-weight: 400;
   font-size: 45px;
 }
+.offer {
+  margin-bottom: 200px;
+}
+.offer__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 46px;
+  font-family: "Lora", serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+.offer__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 105.4px;
+}
+.offer__buttons-perform {
+  width: 272px;
+  height: 52px;
+}
+.offer__buttons-torent {
+  width: 246px;
+  height: 52px;
+}
 .listing {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2334,6 +2366,17 @@ body {
   .info__text3 {
     font-size: 35px;
   }
+  .offer__buttons {
+    gap: 92.4px;
+  }
+  .offer__buttons-perform {
+    width: 272px;
+    height: 52px;
+  }
+  .offer__buttons-torent {
+    width: 238px;
+    height: 52px;
+  }
   .listing {
     padding-left: 30px;
     padding-right: 30px;
@@ -2567,6 +2610,22 @@ body {
   }
   .info__text3 {
     font-size: 30px;
+    margin-bottom: 73px;
+  }
+  .offer {
+    margin-bottom: 130px;
+  }
+  .offer__buttons {
+    gap: 54.4px;
+  }
+  .offer__buttons-perform {
+    width: 272px;
+    height: 52px;
+    gap: 92.4px;
+  }
+  .offer__buttons-torent {
+    width: 238px;
+    height: 52px;
   }
   .listing {
     padding-left: 20px;
@@ -2722,6 +2781,29 @@ body {
   }
   .doit__word3 {
     margin-left: -14vw;
+  }
+  .offer {
+    margin-bottom: 100px;
+  }
+  .offer__buttons {
+    gap: 25px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .offer__buttons-perform {
+    width: 280px;
+    height: 49px;
+    gap: 54.4px;
+    font-size: 14px;
+  }
+  .offer__buttons-torent {
+    width: 280px;
+    height: 49px;
   }
   .page-footer {
     padding-bottom: 50px;

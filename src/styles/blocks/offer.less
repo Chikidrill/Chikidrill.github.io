@@ -1,0 +1,69 @@
+.offer{
+    margin-bottom: 200px;
+    @media @bw768 {
+        margin-bottom: 130px;
+      }
+    @media @bw600 {
+        margin-bottom: 100px;
+      }
+    &__text{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 46px;
+        font-family: @font2;
+        font-size: 22px;
+        font-weight: 400;
+    }
+    &__buttons{
+        display: flex;
+        justify-content: center;
+        gap: 105.4px;
+        @media @bw1340 {
+            gap: 92.4px;
+          }
+        @media @bw768 {
+            gap: 54.4px;
+          }
+        @media @bw600 {
+            gap: 25px;
+            flex-direction: column;
+            align-items: center;
+          }
+    }
+    &__buttons-perform{
+        width: 272px;
+        height: 52px;
+        @media @bw1340 {
+            width: 272px;
+            height: 52px;
+          }
+          @media @bw768 {
+            width: 272px;
+            height: 52px;
+            gap: 92.4px;
+          }
+          @media @bw600 {
+            width: 280px;
+            height: 49px;
+            gap: 54.4px;
+            font-size: 14px;
+          }
+    }
+    &__buttons-torent{
+        width: 246px;
+        height: 52px;
+        @media @bw1340 {
+            width: 238px;
+            height: 52px;
+          }
+          @media @bw768 {
+            width: 238px;
+            height: 52px;
+          }
+          @media @bw600 {
+            width: 280px;
+            height: 49px;
+          }
+    }
+    
+}
