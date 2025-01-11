@@ -912,6 +912,53 @@ body {
   right: 0;
   bottom: 30px;
 }
+.info__logo-icon {
+  width: 100%;
+  height: 100%;
+}
+.info__logo {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+.info__text1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 70px;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 45px;
+}
+.info__text2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Lora", serif;
+  margin-top: 70px;
+  font-weight: 400;
+  font-size: 45px;
+}
+.info__text3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 100px;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 45px;
+}
 .listing {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2274,6 +2321,19 @@ body {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .info__logo {
+    width: 1529px;
+    height: 257px;
+  }
+  .info__text1 {
+    font-size: 35px;
+  }
+  .info__text2 {
+    font-size: 35px;
+  }
+  .info__text3 {
+    font-size: 35px;
+  }
   .listing {
     padding-left: 30px;
     padding-right: 30px;
@@ -2492,6 +2552,22 @@ body {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .info__logo {
+    width: 975px;
+    height: 165px;
+  }
+  .info__text1 {
+    font-size: 30px;
+    margin-top: 80px;
+    margin-bottom: 51px;
+  }
+  .info__text2 {
+    margin-top: 49px;
+    font-size: 30px;
+  }
+  .info__text3 {
+    font-size: 30px;
+  }
   .listing {
     padding-left: 20px;
     padding-right: 20px;
@@ -2620,6 +2696,15 @@ body {
   }
 }
 @media (max-width: 649px) {
+  .info__text1 {
+    font-size: 15px;
+  }
+  .info__text2 {
+    font-size: 15px;
+  }
+  .info__text3 {
+    font-size: 15px;
+  }
   .listing__events-list {
     margin: 0 0 -60px;
   }
@@ -2643,6 +2728,23 @@ body {
   }
   .page-footer__liners {
     gap: 20px;
+  }
+}
+@media (max-width: 319px) {
+  .info__logo {
+    width: 437px;
+    height: 74px;
+  }
+  .info__text1 {
+    font-size: 13px;
+    margin-top: 80px;
+    margin-bottom: 29px;
+  }
+  .info__text2 {
+    font-size: 13px;
+  }
+  .info__text3 {
+    font-size: 13px;
   }
 }
 @media (min-width:1920px) {
