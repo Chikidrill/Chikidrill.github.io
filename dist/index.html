@@ -90,14 +90,15 @@
             <p class="about__block3-text">Мы уже успешно организовали и провели более 100 проектов. Посмотрите, как это было классно.</p>
             <a href="#" class="about__block3-link">
               Смотреть
-              <div class="about__block3-arrow">
-                <svg width="92" height="62" viewBox="0 0 92 62" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M40 52.2132C44.1781 56.4088 49.5013 59.266 55.2966 60.4235C61.0918 61.5811 67.0986 60.987 72.5576 58.7164C78.0166 56.4457 82.6824 52.6006 85.9651 47.6671C89.2479 42.7336 91 36.9334 91 31C91 25.0666 89.2479 19.2664 85.9651 14.3329C82.6824 9.39943 78.0166 5.55425 72.5576 3.28363C67.0986 1.013 61.0918 0.4189 55.2965 1.57646C49.5013 2.73401 44.1781 5.59123 40 9.78681" stroke="#1F1E1E" stroke-width="2" stroke-linecap="round" />
-                  <path d="M5 31L65 31" stroke="#1F1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  <path d="M58 24L65 31L58 38" stroke="#1F1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </div>
+
             </a>
+            <div class="about__block3-arrow arrow">
+              <button type="button" class="arrow">
+                <svg class="arrow__icon" width="92" height="62">
+                  <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -112,7 +113,12 @@
           <article class="article-card listing__article-card">
             <a href="#" class="article-card__link">
               <picture class="article-card__picture">
-                <img src="assets/images/blog/theatre.svg" alt="Theatre Photosession" class="article-card__img" />
+                <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/blog/theatre.webp" />
+                <source media="(max-width: 450px)" srcset="assets/images/blog/theatre.png" />
+                <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/blog/theatre.png_tablet_webp" />
+                <source media="(max-width: 1169px)" srcset="assets/images/blog/theatre.png_tablet" />
+                <source type="image/webp" srcset="assets/images/blog/theatre.webp" />
+                <img src="assets/images/blog/theatre.png" alt="Theatre Photosession" class="article-card__img" />
               </picture>
             </a>
             <div class="article-card__info">
@@ -120,9 +126,11 @@
               <a href="#" class="article-card__title-link">
                 <h4 class="article-card__title">Фотосессия в стенах Театра драмы</h4>
                 <div class="article-card__arrow arrow">
-                  <svg class="arrow__icon" width="92" height="62">
-                    <use xlink:href="assets/icons/symbols.svg#arrow"></use>
-                  </svg>
+                  <button type="button" class="arrow">
+                    <svg class="arrow__icon" width="92" height="62">
+                      <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                    </svg>
+                  </button>
                 </div>
               </a>
               <p class="article-card__description">Организовывая фотосессию для локального бренда одежды мы смогли воплотить все пожелания заказчика и у нас получилась отличная работа. Смотрите как это было </p>
@@ -131,7 +139,12 @@
           <article class="article-card listing__article-card">
             <a href="#" class="article-card__link">
               <picture class="article-card__picture">
-                <img src="assets/images/blog/VR.svg" alt="VR" class="article-card__img" />
+                <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/blog/VR.webp" />
+                <source media="(max-width: 450px)" srcset="assets/images/blog/VR.png" />
+                <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/blog/VR.png_tablet_webp" />
+                <source media="(max-width: 1169px)" srcset="assets/images/blog/VR.png_tablet" />
+                <source type="image/webp" srcset="assets/images/blog/VR.webp" />
+                <img src="assets/images/blog/VR.png" alt="VR" class="article-card__img" />
               </picture>
             </a>
             <div class="article-card__info">
@@ -139,9 +152,11 @@
               <a href="#" class="article-card__title-link">
                 <h4 class="article-card__title">Выставка VR в Томске</h4>
                 <div class="article-card__arrow arrow">
-                  <svg class="arrow__icon" width="92" height="62">
-                    <use xlink:href="assets/icons/symbols.svg#arrow"></use>
-                  </svg>
+                  <button type="button" class="arrow">
+                    <svg class="arrow__icon" width="92" height="62">
+                      <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                    </svg>
+                  </button>
                 </div>
               </a>
               <p class="article-card__description">Клуб виртуальной реальности - это другие миры. яркие эмоции. новый опыт. ... Мы предоставляем нашим клиентам лучший игровой VR-опыт в Томске.</p>
@@ -150,7 +165,12 @@
           <article class="article-card listing__article-card">
             <a href="#" class="article-card__link">
               <picture class="article-card__picture">
-                <img src="assets/images/blog/RockingRadio.svg" alt="RockingRadio" class="article-card__img" />
+                <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/blog/RockingRadio.webp" />
+                <source media="(max-width: 450px)" srcset="assets/images/blog/RockingRadio.png" />
+                <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/blog/RockingRadio.png_tablet_webp" />
+                <source media="(max-width: 1169px)" srcset="assets/images/blog/RockingRadio.png_tablet" />
+                <source type="image/webp" srcset="assets/images/blog/RockingRadio.webp" />
+                <img src="assets/images/blog/RockingRadio.png" alt="RockingRadio" class="article-card__img" />
               </picture>
             </a>
             <div class="article-card__info">
@@ -158,9 +178,11 @@
               <a href="#" class="article-card__title-link">
                 <h4 class="article-card__title">Rocking radio в заброшенном ангаре</h4>
                 <div class="article-card__arrow arrow">
-                  <svg class="arrow__icon" width="92" height="62">
-                    <use xlink:href="assets/icons/symbols.svg#arrow"></use>
-                  </svg>
+                  <button type="button" class="arrow">
+                    <svg class="arrow__icon" width="92" height="62">
+                      <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                    </svg>
+                  </button>
                 </div>
               </a>
               <p class="article-card__description">15 электрогенераторов, километры проводов и пару тонн света. Все это для того, чтобы организовать лучшую вечеринку года для ребят из Новосибирска.</p>
@@ -171,6 +193,14 @@
       </section>
     </div>
 
+    <div class="doit">
+      <p class="doit__text">
+        <span class="doit__word">Просто делайте,</span>
+        <span class="doit__word2">что нравится,</span>
+        <br>
+        <span class="doit__word3">а мы вам поможем</span>
+      </p>
+    </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__liners">
@@ -203,28 +233,30 @@
     </div>
     <div class="page-footer__block2">
       <div class="page-footer__socials socials">
-        <a href="#" class="page-footer__socials socials__link">
+        <a href="#" class="page-footer__social socials__link">
           <svg class="socials__icon" width="24" height="24">
             <use xlink:href="assets/icons/symbols.svg#insta"></use>
           </svg>
         </a>
-        <a href="#" class="page-footer__socials socials__link">
+        <a href="#" class="page-footer__social socials__link">
           <svg class="socials__icon" width="24" height="24">
             <use xlink:href="assets/icons/symbols.svg#vk"></use>
           </svg>
         </a>
-
       </div>
-      <div class="page-footer__copyright">© Millennials 2022</div>
+
       <div class="page-footer__block2-links">
         <a href="#" class="page-footer__block2-link">Политика конфиденциальности</a>
         <a href="#" class="page-footer__block2-link">Cookies</a>
+
       </div>
+      <div class="page-footer__copyright">© Millennials 2022</div>
       <div class="page-footer__create">
+        Создание и продвижение
         <div class="page-footer__create-links">
-          <a href="#" class="page-footer__create-link">Создание и продвижение
-            <svg class="page-footer__create-icon" width="56" height="17">
-              <use xlink:href="assets/icons/symbols.svg#tagree"></use>
+          <a href="#" class="page-footer__create-link">
+            <svg class="page-footer__create-icon" width="80" height="36">
+              <use xlink:href="assets/icons/symbols.svg#dignity"></use>
             </svg>
           </a>
         </div>

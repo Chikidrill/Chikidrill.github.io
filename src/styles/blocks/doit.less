@@ -1,0 +1,54 @@
+.doit{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: right;
+    white-space: nowrap;
+    pointer-events: none;
+    overflow: hidden;
+    font-family: @font3;
+    font-weight: 700;
+    font-size: 6vw;
+    line-height: 1.2;
+    
+    @media @full-hd{
+        font-size: 128px;
+    }
+    @media @bw1660{
+        font-size: 6.5vw;
+    }
+    @media @bw1020{
+        font-size: 8.5vw;
+    }
+    &__text{
+        margin: 0px 0px 0px -2.5vw;
+        @media @bw1020{
+            display: flex;
+            flex-direction: column;
+            
+        }
+        br{
+            @media @bw1020{
+                display: none;
+            }
+        }
+    }
+    &__word{
+        text-align: left;
+    }
+    &__word2{
+        @media @bw1020{
+            margin-right: -10.6vw;
+        }
+
+        @media @bw600{
+            margin-right: -17.6vw;
+        }
+    }
+    &__word3{
+        @media @bw600{
+            margin-left: -14vw;
+        }
+       
+    }
+}
