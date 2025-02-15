@@ -5,12 +5,21 @@
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 90px 95px 50px;
+  padding: 90px 100px 50px;
   background-color: rgba(28, 27, 27, 0.4);
   backdrop-filter: blur(50px);
   overflow-y: auto;
   z-index: 110;
   display: none;
+  
+  @media @bw1340{
+    padding: 90px 40px 50px;
+  }
+
+  @media @bw768{
+    padding: 80px 20px 40px;
+  }
+
   &__wrapper {
     box-sizing: border-box;
     position: relative;
@@ -31,6 +40,9 @@
     max-width: 950px;
     margin: 0 auto;
     padding: 0 40px 40px;
+    @media @bw600{
+      padding: 0px 12px 40px;
+    }
   }
   &__sticky-close {
     position: sticky;
@@ -43,6 +55,10 @@
     position: absolute;
     top: -30px;
     right: -30px;
+    @media @bw768{
+      top: -20px;
+      right: -20px;
+    }
   }
   &__title {
     box-sizing: border-box;
@@ -50,7 +66,7 @@
     align-items: center;
     margin: -40px 0 70px -85px;
     padding: 10px 85px;
-    width: 595px;
+    max-width: 595px;
     min-height: 80px;
     background-color: @black;
     text-transform: uppercase;
@@ -61,5 +77,19 @@
     color: @white;
     letter-spacing: 0.02em;
     z-index: 1;
+    @media @bw1170{
+      max-width: 465px;
+      padding: 10px 60px 10px 20px;
+      margin: -40px 0 70px -0;
+    }
+    @media @bw768{
+      margin: -40px 0 40px;
+      font-size: 18px;
+      
+    }
+    @media @bw500{
+      margin-right: 25px;
+      font-size: 14px;
+    }
   }
 }

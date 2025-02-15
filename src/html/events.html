@@ -87,7 +87,10 @@
           </section>
           
       </div>
-      @@include('blocks/offer.html')
+      <section class="events__block">
+        @@include('blocks/offer.html', {"class":"events__offer"})
+        @@include('blocks/info.html', {"class":"events__info"})
+      </section>
     </main>
     @@include('blocks/event-pp.html')
     @@include('blocks/page-footer.html')
