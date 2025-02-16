@@ -45,14 +45,22 @@
     padding: 20px;
   }
 
+  &__date {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 250px;
+  }
   &__date-inputs {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
     width: 100%;
-    gap: 15px;
-    max-width: 251px;
     height: 55px;
+    pointer-events: none;
   }
-
   &__date-input {
     box-sizing: border-box;
     display: block;
@@ -62,14 +70,34 @@
     border: none;
     border-radius: 5px;
     background-color: @white;
-    padding: 17px 13px 16px;
+    padding: 0 5px;
     font-size: 16px;
     line-height: 1.375;
     text-align: center;
-
+    pointer-events: none;
+    @media @bw400 {
+      font-size: 14px;
+    }
     &--year {
       flex-grow: 1;
       margin-right: 0;
     }
+  }
+  &__date-picker {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    height: 55px;
+    border: none;
+    border-radius: 5px;
+    opacity: 0;
+    cursor: pointer; 
+  }
+  label.error,
+  span.error {
+    display: block;
+    margin: 5px 0 0;
+    color: @red;
   }
 }

@@ -9,7 +9,11 @@
             <a href="#" class="page-footer__block-link">Наши проекты</a>
             <a href="#" class="page-footer__block-link">Контакты</a>
         </div>
-        <div class="form page-footer__subscribe-form">
+            <form
+            action="https://jsonplaceholder.typicode.com/posts"
+            class="page-footer__subscribe-form subscribe-form"
+            id="js-subscribeForm"
+            >
             <h4 class="subscribe-form__title">
                 Подпишись и будь в курсе происходящего
             </h4>
@@ -24,13 +28,13 @@
                 </div>
                 <button type="submit" class="subscribe-form__submit">Подписаться</button>
             </div>
-            <label class="subscribe-form__check check">
-                <input type="checkbox" name="agree" class="check__input" checked>
+            <label class="subscribe-form__check check" >
+                <span class="check__label check__label--s">Согласен на обработку персональных данных</span>
+                <input type="checkbox" name="agree" class="check__input" required checked>
                 <span class="check__mark"></span>
-                <span class="check__label">Согласен на обработку персональных данных</span>
-                
             </label>
-        </div>
+        </form>
+
     </div>
     <div class="page-footer__block2">
         <div class="page-footer__socials socials">

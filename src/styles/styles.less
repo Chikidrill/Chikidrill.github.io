@@ -1,9 +1,14 @@
+@import "global/normalize.less";
 @import "global/variables.less"; // Переменные — основа стилей
 @import "global/mixins.less";    // Миксины
 @import "global/fonts.less";     // Шрифты
 @import "global/common.less";    // Общие стили
-// @import "vendor/swiper.less"; // Вендорные стили (если используются, лучше подключать в конце глобальных)
-
+@import "vendor/swiper.less";
+@import "vendor/swiper_theme.less";
+@import "vendor/selectric.less";
+@import "vendor/selectric_theme.less";
+@import "vendor/air-datepicker.less";
+@import "vendor/air-datepicker_theme.less";
 
 @import "blocks/btn.less";          // Кнопки
 @import "blocks/link.less";         // Ссылки
@@ -38,5 +43,4 @@
 @import "blocks/page-header.less"; // Шапка страницы
 @import "blocks/page-footer.less"; // Подвал страницы
 @import "blocks/arrow.less";
-@import "vendor/swiper.less";
-@import "vendor/swiper_theme.less";
+
