@@ -3167,15 +3167,33 @@ button.swiper-pagination-bullet {
 }
 .about__block3 {
   display: grid;
-  grid-template-columns: 1fr 344px;
+  grid-template-columns: 1fr 1fr;
   padding-top: 110px;
-  grid-template-areas: "picture" "text";
+  grid-template-areas: "pic3 text" "pic3 content";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+.about__block3-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 88px;
+  padding-top: 173px;
 }
 .about__block3-picture {
-  grid-area: picture;
+  grid-area: pic3;
   display: block;
-  max-width: 930px;
   width: 100%;
+  width: 930px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 18px 19px 0 49px;
@@ -3205,12 +3223,15 @@ button.swiper-pagination-bullet {
      object-fit: contain;
 }
 .about__block3-content {
-  padding-left: 60px;
-  padding-top: 71px;
+  grid-area: content;
+  max-width: 344px;
 }
 .about__block3-text {
+  grid-area: text;
   font-size: 18px;
   font-weight: 400;
+  max-width: 344px;
+  margin-bottom: 0;
 }
 .about__block3-link {
   display: -webkit-box;
@@ -3218,11 +3239,10 @@ button.swiper-pagination-bullet {
   display: flex;
   font-size: 16px;
   font-weight: 600;
-  margin-top: 89px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 176px;
+  gap: 117px;
   color: black;
   text-decoration-color: transparent;
   -webkit-transition: color 0.2s, text-decoration-color 0.2s;
@@ -3291,7 +3311,7 @@ button.swiper-pagination-bullet {
       -ms-flex-align: center;
           align-items: center;
   gap: 50px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 .offer__text {
   display: -webkit-box;
@@ -3301,10 +3321,10 @@ button.swiper-pagination-bullet {
       -ms-flex-pack: center;
           justify-content: center;
   text-transform: uppercase;
-  margin-bottom: 46px;
   font-family: "Lora", serif;
   font-size: 22px;
-  font-weight: 400;
+  font-weight: 600;
+  white-space: nowrap;
 }
 .offer__buttons {
   display: -webkit-box;
@@ -3316,10 +3336,12 @@ button.swiper-pagination-bullet {
   gap: 105.4px;
 }
 .offer__buttons-perform {
+  font-family: "Open Sans", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 272px;
+  border: none;
   height: 52px;
   -webkit-box-align: center ;
       -ms-flex-align: center ;
@@ -3331,6 +3353,8 @@ button.swiper-pagination-bullet {
 }
 .upcoming {
   margin-top: 210px;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 .upcoming__link {
   margin-top: 0px;
@@ -3442,6 +3466,13 @@ button.swiper-pagination-bullet {
   padding-left: 40px;
   padding-right: 40px;
 }
+.listing__article-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 .listing__events-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3461,16 +3492,13 @@ button.swiper-pagination-bullet {
   margin-bottom: 95px;
 }
 .blogs {
-  padding: 140px 0 100px;
+  padding: 148px 0 100px;
 }
 .blogs__listing {
   margin-bottom: 100px;
 }
 .events {
-  padding: 140px 0 100px;
-}
-.events__listing {
-  margin-bottom: 100px;
+  padding: 140px 0 50px;
 }
 .events__arrowdown {
   display: block;
@@ -3501,8 +3529,9 @@ button.swiper-pagination-bullet {
 }
 .events .link {
   display: block;
-  padding: 0 0 18px 0;
   text-align: center;
+  margin-top: 0px;
+  padding-top: 11px;
 }
 .events__info {
   display: -webkit-box;
@@ -4776,6 +4805,7 @@ button.swiper-pagination-bullet {
 }
 .arrow:hover {
   color: #bc3324;
+  cursor: pointer;
 }
 .arrow--left {
   -webkit-transform: scaleX(-1);
@@ -4866,6 +4896,29 @@ button.swiper-pagination-bullet {
     font-size: 20px;
     line-height: 27px;
   }
+  .article-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .article-card__link {
+    margin-right: 0;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .article-card__info {
+    padding-right: 0;
+  }
+  .article-card__description {
+    width: 100%;
+    max-width: 536px;
+  }
+  .article-card__picture {
+    margin-bottom: 0px;
+  }
   .article__container {
     padding-left: 30px;
     padding-right: 30px;
@@ -4873,6 +4926,32 @@ button.swiper-pagination-bullet {
   .about__container {
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .about__block3 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "pic3" "row";
+  }
+  .about__block3-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 30px;
+  }
+  .about__block3-picture {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about__block3-text {
+    font-size: 16px;
+    max-width: 280px;
   }
   .promo__title,
   .promo__text {
@@ -4896,6 +4975,9 @@ button.swiper-pagination-bullet {
   .listing {
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .listing__article-list {
+    margin-right: 40px;
   }
   .listing__events-list {
     margin: 0 -15px -100px;
@@ -5163,6 +5245,21 @@ button.swiper-pagination-bullet {
   .about__container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .about__block1 {
+    grid-template-columns: 100%;
+    grid-template-areas: "title" "pic" "text" "text";
+  }
+  .about__block2 {
+    grid-template-columns: 100%;
+    grid-template-areas: "pic1" "title" "text" "pic2";
+  }
+  .about__subtitle {
+    font-size: 26px;
+    font-weight: 700;
+  }
+  .about__text {
+    font-size: 20px;
   }
   .promo__title,
   .promo__text {

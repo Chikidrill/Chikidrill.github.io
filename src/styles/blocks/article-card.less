@@ -3,6 +3,7 @@
     display: flex;
     width: 100%;
     position: relative;
+    
     & + .article-card {
         margin-top: 120px;
         &::before {
@@ -112,4 +113,25 @@
         right: 0;
         bottom: 30px;
       }
+      @media @bw1340 {
+        flex-direction: column; 
+        &__link {
+            margin-right: 0;
+            
+            width: 100%;
+            justify-content: center;
+        }
+        &__info {
+            padding-right: 0;
+            
+        }
+        &__description{
+          width: 100%;
+          max-width: 536px;
+        }
+
+        &__picture {
+            margin-bottom: 0px; 
+        }
+    }
   }

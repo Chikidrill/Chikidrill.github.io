@@ -10,14 +10,14 @@
         "title pic"
         "text text";
         gap: 50px 60px;
-        // @media @w768 {
-        //     grid-template-columns: 100%;
-        //     grid-template-areas: 
-        //       "title"
-        //       "pic"
-        //       "text"
-        //       "text"
-        // }
+        @media @bw768 {
+            grid-template-columns: 100%;
+            grid-template-areas: 
+              "title"
+              "pic"
+              "text"
+              "text"
+        }
     }
     &__block2{
         margin-top: 100px;
@@ -28,14 +28,14 @@
         "title pic2"
         "text text";
         gap: 50px 60px;
-        // @media @w768 {
-        //     grid-template-columns: 100%;
-        //     grid-template-areas: 
-        //       "pic1"
-        //       "title"
-        //       "text"
-        //       "pic2"; 
-        // }
+        @media @bw768 {
+            grid-template-columns: 100%;
+            grid-template-areas: 
+              "pic1"
+              "title"
+              "text"
+              "pic2"; 
+        }
     }
     &__picture{
         grid-area: pic1;
@@ -44,9 +44,10 @@
         grid-area: title;
         margin-top: 50px 0 0;
         font-size: 44px;
-        // @media @w768 {
-        //     font-size: 19px;
-        // }
+        @media @bw768 {
+            font-size: 26px;
+            font-weight: 700;
+        }
     }
     &__text{
         grid-area: text;
@@ -55,33 +56,52 @@
         max-width: 870px;
         font-size: 18px;
         font-weight: 400;
-        // @media @w768 {
-        //     font-size: 20px;
-        // }
+        @media @bw768 {
+            font-size: 20px;
+        }
     }
     &__picture2{
         grid-area: pic2;
         align-self: flex-end;
     }
-    &__block3{
+    &__block3 {
         display: grid;
-        grid-template-columns: 1fr 344px;
+        grid-template-columns: 1fr 1fr;
         padding-top: 110px;
-        grid-template-areas: 
-        "picture" "text";
-        // @media @w768{
-        //     grid-template-areas: 
-        //     "picture"
-        //     "text";
-        // }
-        
-
+        grid-template-areas:
+            "pic3 text"
+            "pic3 content";
+        align-items: center;
+        gap: 50px;
+    
+        @media @bw1340 {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "pic3"
+                "row"; 
+        }
     }
+    
+
+    &__block3-row {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+        gap: 88px;
+        padding-top: 173px;
+        @media @bw1340 {
+            flex-direction: row; 
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+        }
+    }
+
     &__block3-picture{
-        grid-area: picture;
+        grid-area: pic3;
         display: block;
-        max-width: 930px;
         width: 100%;
+        width: 930px;
         box-sizing: border-box;
         padding: 18px 19px 0 49px;
         position:relative;
@@ -100,7 +120,12 @@
             content: '';
             padding-top: 40.86%;
         }
+        @media @bw1340 {
+            justify-content: center;
+        }
     }
+        
+    
     &__block3-img{
         position: absolute;
         top: 19px;
@@ -108,21 +133,27 @@
         width: calc(100% - 57px);
         object-fit: contain;
     }
-    &__block3-content{
-        padding-left: 60px;
-        padding-top: 71px;
+    &__block3-content {
+        grid-area: content;
+        max-width: 344px;
     }
-    &__block3-text{
+    &__block3-text {
+        grid-area: text;
         font-size: 18px;
         font-weight: 400;
+        max-width: 344px;
+        margin-bottom: 0;
+        @media @bw1340 {
+            font-size: 16px;
+            max-width: 280px;
+        }
     }
     &__block3-link{
         display: flex;
         font-size: 16px;
         font-weight: 600;
-        margin-top: 89px;
         align-items: center;
-        gap: 176px;
+        gap: 117px;
         color: @black;
         text-decoration-color: transparent;
         transition: color 0.2s, text-decoration-color 0.2s;
@@ -136,5 +167,6 @@
         justify-content: center;
         right: 0;
         bottom: 30px;
-      }
+    }
 }
+
